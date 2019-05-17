@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://media.licdn.com/dms/image/C4E03AQEiDD8M4wlo8g/profile-displayphoto-shrink_200_200/0?e=1563408000&v=beta&t=5p1nrf8iEuLU3J7eoYH8fU2BcDTPCcDhYtZSws5INTg"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt="selfie"
+        />
+        Michael Simmons
+      </a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" href="./index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <form action="action_page.php">
+        <p>
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your first name..."
+          />
+        </p>
+        <p>
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name..."
+          />
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your email..."
+          />
+        </p>
+        <p>
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write something..."
+            style="height:200px"
+          ></textarea>
+        </p>
+
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">File Upload</label>
+            <input
+              type="file"
+              class="form-control-file"
+              id="exampleFormControlFile1"
+            />
+          </div>
+        </form>
+
+        <p></p>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
